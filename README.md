@@ -1,4 +1,4 @@
-# project-admit-dashboard
+# project-admin-dashboard
 
 ## The Project 
 - This project is a dummy admin dashboard built to showcase what I have learned about CSS Grid
