@@ -13,122 +13,220 @@
             <div id="sidebar-options">
 
                 <div id="website-name">
-                    <p>Dashboard</p>
+                    <p id="dashboard">Dashboard</p>
                 </div>
 
-                <div class="options">Home</div>
-                <div class="options">Profile</div>
-                <div class="options">Messages</div>
-                <div class="options">History</div>
-                <div class="options">Tasks</div>
-                <div class="options">Communities</div>
-                <div class="options">Settings</div>
-                <div class="options">Support</div>
-                <div class="options">Privacy</div>
+                <div id="options-top">
+                    <button class="option-buttons" type="submit">
+                        <img class="side-bar-icon" src="HomeIcon.png" alt="Home Icon">
+                        <span class="side-bar-text">Home</span>
+                    </button>
+                    <button class="option-buttons" type="submit">
+                        <img class="side-bar-icon" src="ProfileIcon.png" alt="Profile Icon">
+                        <span class="side-bar-text">Profile</span>
+                    </button>
+                    <button class="option-buttons" type="submit">
+                        <img class="side-bar-icon" src="MessageIcon.png" alt="Message Icon">
+                        <span class="side-bar-text">Messages</span>
+                    </button>
+                    <button class="option-buttons" type="submit">
+                        <img class="side-bar-icon" src="HistoryIcon.png" alt="History Icon">
+                        <span class="side-bar-text">History</span>
+                    </button>
+                    <button class="option-buttons" type="submit">
+                        <img class="side-bar-icon" src="TaskIcon.png" alt="Task Icon">
+                        <span class="side-bar-text">Tasks</span>
+                    </button>
+                    <button class="option-buttons" type="submit">
+                        <img class="side-bar-icon" src="CommunityIcon.png" alt="Communities Icon">
+                        <span class="side-bar-text">Communities</span>
+                    </button>
+                </div>
+
+                <div id="options-bottom">
+                    <button class="option-buttons" type="submit">
+                        <img class="side-bar-icon" src="SettingIcon.png" alt="Settings Icon">
+                        <span class="side-bar-text">Settings</span>
+                    </button>
+                    <button class="option-buttons" type="submit">
+                        <img class="side-bar-icon" src="SupportIcon.png" alt="Support Icon">
+                        <span class="side-bar-text">Support</span>
+                    </button>
+                    <button class="option-buttons" type="submit">
+                        <img class="side-bar-icon" src="PrivacyIcon.png" alt="Privacy Icon">
+                        <span class="side-bar-text">Privacy</span>
+                    </button>
+                </div>
             </div>
 
         </div>
 
         <div id="top-menu">
 
-            <div id="search">
-                <!-- search button here-->
-                <fieldset>
-                    <input type="text" id="searchbar">
-                </fieldset>
+            <div class="search-function">
+                <img id="search-icon" class="search-function" src="SearchIcon.png" alt="Search Icon">
             </div>
 
-            <div>
+            <fieldset class="search-function">
+                <input type="text" id="searchbar">
+            </fieldset>
 
-                <!-- notification icon here -->
-                <div>
-                    <!-- user icon here  -->
-                    <p class="username-top-right">Chee Hong "Kobe" Wong</p>
-                </div>
-                
-                <div>
-                    <!-- user icon here  -->
-                    <p>Hi there,</p>
-                    <p class="username-main">Chee Hong "Kobe" Wong (@Kobe.w)</p>
-                </div>
+            <!-- notification icon here -->
+            <input type="image" id="notification-button" src="NotificationIcon.png">
 
-                <div id="menu-options">
-                    <button class="menu-buttons">New</button>
-                    <button class="menu-buttons">Upload</button>
-                    <button class="menu-buttons">Share</button>
-                </div>
 
+            <!-- user icon and user name here  -->
+            <img id="top-profile-picture" src="MyAvatar.jpg" alt="my profile picture">
+            <p class="username-top-right">Chee Hong "Kobe" Wong</p>
+        </div>
+
+        <div id="secondary-menu">
+            <img id="second-line-profile-picture" src="MyAvatar.jpg" alt="my profile picture">
+            <div id="name-and-greeting">
+                <p>Hi there,</p>
+                <p class="username-main">Chee Hong "Kobe" Wong (@kobe.w)</p>
             </div>
+    
+            <button class="menu-buttons new-button">New</button>
+            <button class="menu-buttons upload-button">Upload</button>
+            <button class="menu-buttons share-button">Share</button>
 
-            <div id="your-projects">
-                <div id="project-title">My Projects</div>
-                <div class="project-card">
+
+        </div>
+
+        <!-- website cards here -->
+        <div id="your-projects">
+            <div id="project-title">My Projects</div>
+            <div class="project-card">
+                <div class="project-card-texts">
                     <p class="project-card-title">Carly's Lyrics Word Counter</p>
                     <p class="project-card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, exercitationem. Ullam cum beatae nihil, sint est voluptate quaerat reprehenderit minima, officia eum doloribus, ad incidunt exercitationem voluptatem atque quae vitae voluptas non et. Voluptatibus eveniet, aliquam iure ipsum minima quia!</p>
                 </div>
-                <div class="project-card">
+                <div class="project-card-buttons">
+                    <input type="image" id="share-button" src="ShareButtonAppleStyle.png">
+                    <input type="image" id="save-button" src="SaveButtonAppleStyle.png">
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-card-texts">
                     <p class="project-card-title">Irish Learning Blog</p>
                     <p class="project-card-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, ut sunt cumque harum, ipsa quia, officia at suscipit ratione eaque odit minima voluptatibus ex neque omnis ad! Vero, consequatur voluptate.</p>
                 </div>
-                <div class="project-card">
+                <div class="project-card-buttons">
+                    <input type="image" id="share-button" src="ShareButtonAppleStyle.png">
+                    <input type="image" id="save-button" src="SaveButtonAppleStyle.png">
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-card-texts">
                     <p class="project-card-title">Project Sign Up Form</p>
                     <p class="project-card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis tempora ratione harum! Nostrum modi sapiente, dolores doloribus fugiat voluptate nobis assumenda eos nihil quidem nulla commodi.</p>
                 </div>
-                <div class="project-card">
+                <div class="project-card-buttons">
+                    <input type="image" id="share-button" src="ShareButtonAppleStyle.png">
+                    <input type="image" id="save-button" src="SaveButtonAppleStyle.png">
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-card-texts">
                     <p class="project-card-title">Calculator</p>
                     <p class="project-card-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam odit molestias laudantium, itaque veritatis eum necessitatibus magnam in asperiores mollitia magni minima obcaecati recusandae illo maxime ut pariatur!</p>
                 </div>
-                <div class="project-card">
+                <div class="project-card-buttons">
+                    <input type="image" id="share-button" src="ShareButtonAppleStyle.png">
+                    <input type="image" id="save-button" src="SaveButtonAppleStyle.png">
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-card-texts">
                     <p class="project-card-title">Etch A Sketch</p>
                     <p class="project-card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam perspiciatis repellendus unde rerum explicabo? Eos, debitis vero! Modi dolor amet libero veritatis, atque accusamus consequatur animi quibusdam odit reiciendis!</p>
                 </div>
-                <div class="project-card">
+                <div class="project-card-buttons">
+                    <input type="image" id="share-button" src="ShareButtonAppleStyle.png">
+                    <input type="image" id="save-button" src="SaveButtonAppleStyle.png">
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-card-texts">
                     <p class="project-card-title">Rock Paper Scissors</p>
                     <p class="project-card-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt inventore alias perspiciatis quod hic nihil illo totam placeat ab odio.</p>
                 </div>
+                <div class="project-card-buttons">
+                    <input type="image" id="share-button" src="ShareButtonAppleStyle.png">
+                    <input type="image" id="save-button" src="SaveButtonAppleStyle.png">
+                </div>
+            </div>
+        </div>
+
+
+        <div id="announcents-and-trending">
+
+            <!-- announcements here -->
+            <div id="your-announcement">
+                <div id="announcement-title">Announcement</div>
+                <div class="announcement-card">
+                    <p class="announcement-card-title">Site Maintenance</p>
+                    <p class="announcement-card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae ipsam quam deleniti officiis officia.</p>
+                </div>
+                <div class="announcement-card">
+                    <p class="announcement-card-title">Community Share Day</p>
+                    <p class="announcement-card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae ipsam quam deleniti officiis officia.</p>
+                </div>
+                <div class="announcement-card">
+                    <p class="announcement-card-title">Updated Privacy Policy</p>
+                    <p class="announcement-card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae ipsam quam deleniti officiis officia.</p>
+                </div>
             </div>
 
-            <div id="announcents-and-trending">
-                <div id="your-announcement">
-                    <div id="announcement-title">Announcement</div>
-                    <div class="announcement-card">
-                        <p class="announcement-card-title">Site Maintenance</p>
-                        <p class="announcement-card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae ipsam quam deleniti officiis officia.</p>
+            <!-- trending here -->
+            <div id="your-trending">
+                <div id="trending-title">Trending</div>
+                <div class="trending-card">
+                    <div class="trending-card-avatar">
+                        <img class="user-avatars" src="Avatar3.jpg" alt="Avatar 3">
                     </div>
-                    <div class="announcement-card">
-                        <p class="announcement-card-title">Community Share Day</p>
-                        <p class="announcement-card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae ipsam quam deleniti officiis officia.</p>
-                    </div>
-                    <div class="announcement-card">
-                        <p class="announcement-card-title">Updated Privacy Policy</p>
-                        <p class="announcement-card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae ipsam quam deleniti officiis officia.</p>
-                    </div>
-                </div>
-
-                <div id="your-trending">
-                    <div id="trending-title">Trending</div>
-                    <div class="trending-card">
+                    <div class="trending-card-name">
                         <p class="trending-card-title">Carly Rae Jepsen</p>
                         <p class="trending-card-desciption">E.MO.TION</p>
                     </div>
-                    <div class="trending-card">
+                </div>
+
+                <div class="trending-card">
+                    <div class="trending-card-avatar">
+                        <img class="user-avatars" src="Avatar1.jpg" alt="Avatar 1">
+                    </div>
+                    <div class="trending-card-name">
                         <p class="trending-card-title">Carly Rae Jepsen</p>
                         <p class="trending-card-desciption">The Loveliest Time</p>
                     </div>
-                    <div class="trending-card">
+                </div>
+
+                <div class="trending-card">
+                    <div class="trending-card-avatar">
+                        <img class="user-avatars" src="Avatar2.jpg" alt="Avatar 2">
+                    </div>
+                    <div class="trending-card-name">
                         <p class="trending-card-title">Carly Rae Jepsen</p>
                         <p class="trending-card-desciption">Dedicated</p>
                     </div>
-                    <div class="trending-card">
+                </div>
+                
+                <div class="trending-card">
+                    <div class="trending-card-avatar">
+                        <img class="user-avatars" src="Avatar4.jpg" alt="Avatar 4">
+                    </div>
+                    <div class="trending-card-name">
                         <p class="trending-card-title">Carly Rae Jepsen</p>
                         <p class="trending-card-desciption">Kiss</p>
                     </div>
                 </div>
-
-                
             </div>
 
+            
         </div>
+
+        
     
     </div>
 </body>
