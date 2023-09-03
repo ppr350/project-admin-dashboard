@@ -27,7 +27,7 @@ button {
 }
 
 #website-name {
-    font-size: clamp(16px, 3.5vw, 37px);
+    font-size: clamp(16px, 3.5vw, 32px);
 }
 
 #sidebar {
@@ -40,7 +40,11 @@ button {
 }
 
 #sidebar-options {
-    
+    /* display: flex;
+    max-height: 100%;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: flex-start; */
 }
 
 #options-top,
@@ -97,7 +101,7 @@ button:hover {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    gap: 0.7rem;
+    gap: 1%;
     font-size: clamp(10px, 2vw, 16px);
     border: 1px solid blue;
 }
@@ -125,7 +129,7 @@ button:hover {
 #secondary-menu {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1%;
     font-size: clamp(10px, 2vw, 16px);
     border: 1px solid blue;
 }
@@ -138,17 +142,18 @@ button:hover {
     margin: 1rem 0.5rem 0.5rem;
 }
 
-#project-container {
-    padding: 0.5rem;
-    gap: 0.5rem;
-}
-
 .project-card {
-    /* gap: 0.5rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .project-card-texts {
     font-size: clamp(12px, 2vw, 16px);
+}
+
+.project-card-buttons {
+
 }
 
 .menu-buttons {
@@ -157,7 +162,7 @@ button:hover {
     text-decoration: none;
     display: inline-block;
     font-size: clamp(10px, 1.2vw, 16px);
-    padding: 8px 18px;
+    padding: 0.5rem 1rem;
     border-radius: 16px;
 }
 
@@ -173,6 +178,9 @@ button:hover {
 #project-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    padding: 0.5rem;
+    gap: 0.5rem;
 }
 
 #announcents-and-trending {
@@ -182,6 +190,20 @@ button:hover {
 
 .trending-card-title p span {
     display: block;
+}
+
+#announcement-title,
+.announcement-card,
+#trending-title {
+    margin-bottom: calc(2vmin + 2px);
+
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
 }
 
 #main-container,
