@@ -40,23 +40,18 @@ button {
 }
 
 #sidebar-options {
-    /* display: flex;
     max-height: 100%;
     max-width: 100%;
-    flex-direction: column;
-    align-items: flex-start; */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    gap: calc(2vmin + 2px);
+    margin: auto;
 }
 
 #options-top,
 #options-bottom {
-    max-height: 100%;
-    max-width: 100%;
-    margin: auto;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: flex-start;
-    gap: calc(2vmin + 2px);
-
+    /* gap: calc(2vmin + 2px); */
 }
 
 #options-top {
@@ -74,8 +69,11 @@ button {
     font-size: clamp(10px, 2vw, 16px);
     display: flex;
     align-items: center;
+    margin-bottom: calc(2vmin + 2px);
     border: 1px solid blue;
 }
+
+
 
 button:hover {
     background-color: rgb(208, 208, 208);
