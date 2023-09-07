@@ -68,7 +68,7 @@ button {
 #options-bottom {
     appearance: none;
     -webkit-appearance: none;
-    color: #000001;
+    color: #000001 !important;
 }
 
 .option-buttons {
