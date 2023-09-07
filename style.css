@@ -65,15 +65,15 @@ button {
 }
 
 .side-bar-text {
-    appearance: none;
-    -webkit-appearance: none;
-    color: #000001 !important;
+    /* appearance: none;
+    -webkit-appearance: none; */
+    color: #000001;
 }
 
 .option-buttons {
     border: none;
     background-color: transparent;
-    font-size: clamp(0.625rem, 0.55rem + 0.375rem, 1rem);
+    font-size: clamp(0.5rem, 0.4rem + 0.5vw, 1rem);
     display: flex;
     align-items: center;
     margin-bottom: calc(2vmin + 2px);
