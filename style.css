@@ -64,8 +64,7 @@ button {
     background-color: #EDF5E1;
 }
 
-#options-top,
-#options-bottom {
+.side-bar-text {
     appearance: none;
     -webkit-appearance: none;
     color: #000001 !important;
