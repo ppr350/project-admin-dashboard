@@ -64,6 +64,11 @@ button {
     background-color: #EDF5E1;
 }
 
+#options-top,
+#options-bottom {
+    color: black;
+}
+
 .option-buttons {
     border: none;
     background-color: transparent;
