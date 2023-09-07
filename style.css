@@ -65,8 +65,6 @@ button {
 }
 
 .side-bar-text {
-    /* appearance: none;
-    -webkit-appearance: none; */
     color: #000001;
 }
 
@@ -110,7 +108,7 @@ button:hover {
     width: clamp(300px, 40vw, 700px);
     border: 1px solid #05386B;
     background-color: #8EE4AF;
-    border: none;
+    /* border: none; */
 }
 
 #top-profile-picture {
